@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh" data-bs-theme="dark">
+
+  <head>
+    <meta charset="utf-8"/>
+    <!--網頁編碼-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---->
+    <title>Bootstrap Work</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+  <body>
+    <h1>小萌新做網頁</h1>
+    <hr/>
+    <h2>上課的東西</h2>
+    <p>
+    <table id="csie">
+      <tr> <th>開課單位</th> <th>課程名稱</th> <th>授課講師</th> </tr>
+      <tr> <td>資工系</td>   <td>物件導向</td> <td>黃崇源</td>   </tr>
+      <tr> <td>資工系</td>   <td>計網</td>     <td>春良</td>     </tr>
+      <tr> <td>資工系</td>   <td>實務</td>     <td>哲維</td>     </tr>
+      <tr> <td>資工系</td>   <td>生物</td>     <td>光武</td>     </tr>
+      <tr> <td>資工系</td>   <td>通訊</td>     <td>仁暉</td>     </tr>
+      <tr> <td>資工系</td>   <td>專題</td>     <td>志達</td>     </tr>
+    </table>
+    <button onclick="changeResult()">Change</button>
+    <script>
+    function changeResult() {
+      var myTable = document.getElementById("csie");
+      myTable.rows[0].cells[2].innerHTML = "春良";
+    }
+    </script>
+    </p>
+    <hr/>
+    <h2>好歌推薦</h2>
+    <h4>神っぽいな的各種版本</h4>
+    <div>
+    <img src="https://yt3.googleusercontent.com/U9NPl_q3ptSFGJcobr_AtOgiNm8hYRBtMTwEfEy_HOEnnjSm5UfsJGbNBSpig1_9WfbTxl3s=s900-c-k-c0x00ffffff-no-rj" width="100">
+    <a href="https://www.youtube.com/watch?v=EHBFKhLUVig">本家-ピノキオピー初音版本</a>
+    </div>
+    <div>
+    <img src="https://i.scdn.co/image/ab6761610000e5ebf3bb04995cb61f04936424ee" width="100">
+    <a href="https://www.youtube.com/watch?v=7i_nc5GGIsI">Ado翻唱</a>
+    </div>
+    <div>
+    <img src="https://www.siliconera.com/wp-content/uploads/2022/12/laplusdarknesshiatus.png?fit=896%2C504" width="120">
+    <a href="https://www.youtube.com/watch?v=yTb_AvLchgY">Holo-Laplus</a>
+    </div>
+    <div>
+    <img src="https://i.ytimg.com/an_webp/One8HOBsC5k/mqdefault_6s.webp?du=3000&sqp=CLmcwqAG&rs=AOn4CLCEKAfSxgDj2mZmPwqJPPPpb9uY2g" width="120">
+    <a href="https://www.youtube.com/watch?v=One8HOBsC5k">歌手まふまふ×天月-あまつき</a>
+    </div>
+    <div>
+    <img src="https://www.neowing.co.jp/pictures/l/13/24/SMCL-770.jpg" width="100">
+    <a href="https://www.youtube.com/watch?v=7i_nc5GGIsI">Kotoha唱的(激推)</a>
+    </div>
+    <div>
+    <img src="https://i.ytimg.com/an_webp/0D8vmSAcL9E/mqdefault_6s.webp?du=3000&sqp=CPLWwaAG&rs=AOn4CLCjhrxz4lpxu4Foc0h4cp_R8tF9lw" width="120">
+    <a href="https://www.youtube.com/watch?v=0D8vmSAcL9E">Lucia × Layla.（Cover）(剛出)</a>
+    </div><br/><hr/>
+
+    <h2>嵌入影片</h2>
+    <iframe width="898" height="505" src="https://www.youtube.com/embed/Oe7FXZPYMQw" title="交流道→明德樓「怎樣開車不迷路」" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/HQaDd_nEb0I?list=PLRjgE3pAnTILsGKX5zF6jP8TLxPA0v6rL" title="【html】影片、嵌入youtube影片" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </body>
+</html>

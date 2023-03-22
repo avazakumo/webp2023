@@ -19,7 +19,11 @@ window.addEventListener("keyup", function(e) {
 });
 
 function add_new_chars() {
-    container.textContent = Math.floor(Math.random()*1000);
-    console.log("new");
+  var len= Math.floor(Math.random()*3) + 1;
+  var possible = "abcdefghijklmnopqrstuvwxyz";
+  for (var i = 0; i < len; i++){
+    container.textContent += possible.charAt(Math.floor(Math.random() * 26));
+  }
+  console.log("new");
 };
 </script>

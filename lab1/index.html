@@ -9,14 +9,11 @@ var container = document.getElementById('container');
 window.addEventListener("keyup", function(e) {
   console.log(e.key);
   if (e.key) {
-    if (e.key == container.textContent ) {
-      var del = container.textContent;
-      container.textContent = str.substring(1, str.length);
-    }
+    var del = container.textContent;
+    container.textContent = container.textContent.substring(1, container.textContent.length);
   }
+  if (container.textContent == ""){
     add_new_chars();
+    console.log("new");
+  }
 });
-
-function add_new_chars() {
-  container.textContent = Math.floor(Math.random()*1000);
-};

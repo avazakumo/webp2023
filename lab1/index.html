@@ -4,16 +4,22 @@
   </div>
 </body>
 
-
+<src>
 var container = document.getElementById('container');
 window.addEventListener("keyup", function(e) {
   console.log(e.key);
-  if (e.key) {
-    var del = container.textContent;
-    container.textContent = container.textContent.substring(1, container.textContent.length);
+  var del = container.textContent;
+  if (e.key == del.substring(0, 1)) {
+    container.textContent = del.substring(1, del.length);
   }
-  if (container.textContent == ""){
+  
+  if (container.textContent == "") {
     add_new_chars();
-    console.log("new");
   }
 });
+
+function add_new_chars() {
+    container.textContent = Math.floor(Math.random()*1000);
+    console.log("new");
+};
+</src>

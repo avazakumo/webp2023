@@ -20,9 +20,9 @@ window.addEventListener("keyup", function(e) {
 
 function add_new_chars() {
   var len= Math.floor(Math.random()*3) + 1;
-  var possible = "abcdefghijklmnopqrstuvwxyz";
+  var letter = "abcdefghijklmnopqrstuvwxyz";
   for (var i = 0; i < len; i++){
-    container.textContent += possible.charAt(Math.floor(Math.random() * 26));
+    container.textContent += letter.charAt(Math.floor(Math.random() * letter.length));
   }
   console.log("new");
 };

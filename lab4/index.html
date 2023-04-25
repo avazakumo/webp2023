@@ -29,7 +29,8 @@
         .then(res => {
           return res.json(); //抓json檔
         }).then(result => {  //result收json並操作
-          addNewData(result);
+          dataset = result; //dataset = result
+          addNewData(dataset);
         });//抓資料
         
         var curpage = 1;
